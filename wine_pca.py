@@ -50,3 +50,14 @@ plt.title('3D PCA Scatter Plot')
 
 # Display the plot
 plt.show()
+
+
+''' NOTE: How to use this script
+First of all, this data has not left any of the entries out for testing. 
+In reality we should take out an entry from each class before doing the PCA.
+
+The 'coefficients' DataFrame contains the coefficients of the principal components.
+This is what you would apply to unknown/test data to reduce its dimensionality.
+'data_3d' contains the data reduced to 3 dimensions FOR THIS SPECIFIC EXAMPLE.
+'data_3d' is the matrix multiplication product of the original data and the first 3 coefficients vectors (as a matrix).
+'''
